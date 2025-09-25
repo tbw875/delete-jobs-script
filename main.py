@@ -29,7 +29,6 @@ def load_csv():
     """Load the csv file."""
     csv_path, column_name = get_csv_path()
     df = pd.read_csv(csv_path)
-    print(f"Loaded {len(df)} rows from CSV")
     return df, column_name
 
 
